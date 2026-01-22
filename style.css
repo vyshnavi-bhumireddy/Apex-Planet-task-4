@@ -1,0 +1,165 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f5f7fa;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  background: #2f3640;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00a8ff;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Portfolio */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* To-Do */
+#todo input,
+#todo button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+}
+
+#todo button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#todo button:hover {
+  background-color: #219150;
+}
+
+#taskList {
+  margin-top: 20px;
+  list-style: none;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ecf0f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Products */
+#products select {
+  padding: 10px;
+  font-size: 15px;
+  margin: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+}
+
+#productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.product {
+  background: #f7f9fb;
+  border: 1px solid #dcdde1;
+  padding: 15px;
+  margin: 12px;
+  width: 240px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product h3 {
+  color: #2980b9;
+  margin-bottom: 5px;
+}
